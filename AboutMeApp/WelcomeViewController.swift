@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class UserViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
 
     @IBOutlet var userNameLabel: UILabel!
     
@@ -17,12 +17,4 @@ final class UserViewController: UIViewController {
         super.viewDidLoad()
         userNameLabel.text = "Welcome, \(userName ?? "User")!"
     }
-    
-    @IBAction func logOutButtonAction() {
-//        let logInVC = LogInViewController()
-//        logInVC.userNameTextField.text = ""
-//        logInVC.passwordTextField.text = ""
-        dismiss(animated: true)
-    }
-    
 }

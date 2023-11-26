@@ -7,37 +7,50 @@
 
 import UIKit
 
-final class LogInViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     // MARK: - IB Outlets and Properties
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let userName = "1"
+    private let user = "1"
     private let password = "1"
 
+    // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let userVC = segue.destination as? UserViewController
+        let userVC = segue.destination as? WelcomeViewController
         userVC?.userName = userNameTextField.text
     }
     
-    // MARK: - IB Actions
-    @IBAction func logInButtonAction() {
-        guard userNameTextField.text == userName && passwordTextField.text == password else {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard userNameTextField.text == user, passwordTextField.text == password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
             )
-            return
+            return false
         }
+        return true
     }
     
+    // MARK: - IB Actions
     @IBAction func remindName() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is \(userName) 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user) 😉")
     }
     
     @IBAction func remindPassword() {
         showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) 😉")
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+        dismiss(animated: true)
+        print("Ok")
     }
     
     // MARK: - Private Methods
