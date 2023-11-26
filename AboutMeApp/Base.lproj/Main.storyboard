@@ -98,33 +98,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXj-Xo-TeA">
-                                <rect key="frame" x="167" y="741" width="96" height="41"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log out">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="AdU-ZM-I2b" kind="unwind" unwindAction="unwindFor:" id="d6W-f0-0jE"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-kD-ea4">
                                 <rect key="frame" x="188" y="286" width="54" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXj-Xo-TeA">
+                                <rect key="frame" x="167" y="741.66666666666663" width="96" height="40.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="0.75302933673469385" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="AdU-ZM-I2b" kind="unwind" unwindAction="unwindFor:" id="d6W-f0-0jE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rgS-Ez-iMK"/>
-                        <color key="backgroundColor" red="0.38039215686274508" green="0.49019607843137253" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rgS-Ez-iMK" firstAttribute="bottom" secondItem="KXj-Xo-TeA" secondAttribute="bottom" constant="150" id="AYQ-nr-W2E"/>
-                            <constraint firstItem="txz-SG-VJt" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="MhT-oN-mZz"/>
-                            <constraint firstItem="KXj-Xo-TeA" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="opz-MJ-1Hg"/>
-                            <constraint firstItem="8Qd-kD-ea4" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="qBd-Cf-7mh"/>
-                            <constraint firstItem="txz-SG-VJt" firstAttribute="top" secondItem="rgS-Ez-iMK" secondAttribute="top" constant="200" id="sfJ-Xb-Ruq"/>
-                            <constraint firstItem="8Qd-kD-ea4" firstAttribute="top" secondItem="txz-SG-VJt" secondAttribute="bottom" constant="50" id="zPo-Fg-phi"/>
+                            <constraint firstItem="txz-SG-VJt" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="9uQ-bu-tdA"/>
+                            <constraint firstItem="8Qd-kD-ea4" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="CSY-N0-OWm"/>
+                            <constraint firstItem="rgS-Ez-iMK" firstAttribute="bottom" secondItem="KXj-Xo-TeA" secondAttribute="bottom" constant="150" id="POD-cu-JPB"/>
+                            <constraint firstItem="8Qd-kD-ea4" firstAttribute="top" secondItem="txz-SG-VJt" secondAttribute="bottom" constant="50" id="ef5-MQ-6HX"/>
+                            <constraint firstItem="KXj-Xo-TeA" firstAttribute="centerX" secondItem="JMt-Jp-vzP" secondAttribute="centerX" id="y4r-ds-3wk"/>
+                            <constraint firstItem="txz-SG-VJt" firstAttribute="top" secondItem="rgS-Ez-iMK" secondAttribute="top" constant="200" id="yQo-KX-8dx"/>
                         </constraints>
                     </view>
                     <connections>
