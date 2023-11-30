@@ -291,12 +291,13 @@
             </objects>
             <point key="canvasLocation" x="3836" y="722"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="9C6-3A-wsj">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="efp-Rb-CsY" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="efp-Rb-CsY" customClass="TabBarViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1qn-r6-OwG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="secondaryLabelColor"/>
@@ -314,7 +315,7 @@
         <!--Info-->
         <scene sceneID="UHV-tS-sjb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pTV-KH-dLt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pTV-KH-dLt" customClass="NavigationViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle.fill" catalog="system" id="3sm-VQ-10f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="UWz-WZ-s8x">

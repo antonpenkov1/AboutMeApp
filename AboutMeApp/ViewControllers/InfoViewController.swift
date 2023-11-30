@@ -16,17 +16,19 @@ final class InfoViewController: UIViewController {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var photoImageView: UIImageView!
     
-    private let person = User.getUserInfo().person
+    var person: Person!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addGradient()
+        
+        photoImageView.layer.cornerRadius = 50
+        
         firstNameLabel.text = person.firstName
         lastNameLabel.text = person.lastName
         ageLabel.text = person.age
         cityLabel.text = person.city
-        photoImageView.layer.cornerRadius = 50
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

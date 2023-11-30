@@ -12,11 +12,17 @@ final class WelcomeViewController: UIViewController {
     @IBOutlet var userNameLabel: UILabel!
     
     var userName: String!
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameLabel.text = "Welcome, \(userName ?? "User")!"
         view.addGradient()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let infoVC = segue.destination as? InfoViewController
+        infoVC?.person = person
     }
     
 }
