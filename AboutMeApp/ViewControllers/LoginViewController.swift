@@ -23,9 +23,16 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarVC = segue.destination as? TabBarViewController else { return }
-        tabBarVC.userName = user.userName
-        tabBarVC.person = user.person
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        
+        tabBarVC.viewControllers?.forEach { viewController in
+            if let firstVC = viewController as? WelcomeViewController {
+                firstVC.userName = user.userName
+            } else if let navigationVC = viewController as? UINavigationController {
+                let secondVC = navigationVC.topViewController as? InfoViewController
+                secondVC?.person = user.person
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -51,7 +58,6 @@ final class LoginViewController: UIViewController {
         sender.tag == 0 
             ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.userName) 😉")
             : showAlert(withTitle: "Oops!", andMessage: "Your password is \(user.password) 😉")
-        
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

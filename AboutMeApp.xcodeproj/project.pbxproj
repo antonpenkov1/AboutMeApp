@@ -10,8 +10,6 @@
 		D278EA392B19178600BFA8F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA382B19178600BFA8F7 /* User.swift */; };
 		D278EA3B2B19279F00BFA8F7 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA3A2B19279F00BFA8F7 /* InfoViewController.swift */; };
 		D278EA3D2B19338400BFA8F7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA3C2B19338400BFA8F7 /* BioViewController.swift */; };
-		D278EA3F2B1948D200BFA8F7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA3E2B1948D200BFA8F7 /* TabBarViewController.swift */; };
-		D278EA412B194CA100BFA8F7 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278EA402B194CA100BFA8F7 /* NavigationViewController.swift */; };
 		D2C4910E2B138DBF00AC17C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4910D2B138DBF00AC17C9 /* AppDelegate.swift */; };
 		D2C491102B138DBF00AC17C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4910F2B138DBF00AC17C9 /* SceneDelegate.swift */; };
 		D2C491122B138DBF00AC17C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C491112B138DBF00AC17C9 /* LoginViewController.swift */; };
@@ -25,8 +23,6 @@
 		D278EA382B19178600BFA8F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D278EA3A2B19279F00BFA8F7 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D278EA3C2B19338400BFA8F7 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
-		D278EA3E2B1948D200BFA8F7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		D278EA402B194CA100BFA8F7 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		D2C4910A2B138DBF00AC17C9 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C4910D2B138DBF00AC17C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C4910F2B138DBF00AC17C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +62,6 @@
 				D2C491212B13A21900AC17C9 /* WelcomeViewController.swift */,
 				D278EA3A2B19279F00BFA8F7 /* InfoViewController.swift */,
 				D278EA3C2B19338400BFA8F7 /* BioViewController.swift */,
-				D278EA3E2B1948D200BFA8F7 /* TabBarViewController.swift */,
-				D278EA402B194CA100BFA8F7 /* NavigationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,10 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D278EA3F2B1948D200BFA8F7 /* TabBarViewController.swift in Sources */,
 				D278EA3D2B19338400BFA8F7 /* BioViewController.swift in Sources */,
 				D2C491122B138DBF00AC17C9 /* LoginViewController.swift in Sources */,
-				D278EA412B194CA100BFA8F7 /* NavigationViewController.swift in Sources */,
 				D2C491222B13A21900AC17C9 /* WelcomeViewController.swift in Sources */,
 				D2C4910E2B138DBF00AC17C9 /* AppDelegate.swift in Sources */,
 				D278EA392B19178600BFA8F7 /* User.swift in Sources */,
